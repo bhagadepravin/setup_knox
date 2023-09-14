@@ -2,17 +2,19 @@
 
 ##### How to connect
 
-- [WebHDFS](https://github.com/bhagadepravin/setup_knox/edit/main/knox-services.md)
-- Oozie
-- HBase
-- Hive
-- Yarn
-- Kafka
-- Solr
-- Avatica
-- Cloudera Manager
-- Livy Server
-- Elasticsearch
+- [WebHDFS](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#webhdfs)
+- [HIVE](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Hive)
+- [YARN](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#yarn)
+- [Kafka](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#kafka)
+- [Solr](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#solr)
+- [Oozie](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#oozie)
+- [HBase](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#hbase)
+- [Spark](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#spark)
+- [HDFS](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#hdfs)
+- [Livy](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#livy)
+- [ElasticSearch](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#elasticsearch)
+- [Knox UI Service Details](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md#knox-ui-service-details)
+
 
 
 ## WebHDFS
@@ -74,14 +76,14 @@ beeline -u "jdbc:hive2://KnoxserverInternalHostName:8443/;ssl=true;sslTrustStore
 </param>
 ```
 
-## [YARN](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Yarn)
-
+## YARN
+[Yarn](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Yarn)
 [Yarn Examples via cURL](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Yarn+Examples+via+cURL)
 
 curl -ikv -u guest:guest-password -X GET 'https://localhost:8443/gateway/default/resourcemanager/v1/cluster'
 
-## [KAFKA](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Kafka)
-
+## KAFKA
+[Kafka](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Kafka)
 ```
 <service>
     <role>KAFKA</role>
@@ -100,7 +102,8 @@ curl -ikv -u guest:guest-password -X POST 'https://localhost:8443/gateway/defaul
 
 ````
 
-## [SOLR](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Solr)
+## SOLR
+[Solr](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Solr)
 
 ```
 <service>
@@ -125,11 +128,11 @@ curl -ikv -u guest:guest-password -X GET 'https://localhost:8443/gateway/default
 curl -ikv -u guest:guest-password -X POST 'https://localhost:8443/gateway/default/solr/admin/collections?action=CLUSTERSTATUS' 
 ```
 
-## [OOZIE](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Oozie+Example+via+cURL)
+## OOZIE
+https://knox.apache.org/books/knox-2-0-0/user-guide.html#Oozie+Example+via+cURL
 
-
-## [HBASE](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase)
-
+## HBASE
+[Hbase:](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase)
 [HBase REST API Setup](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase+REST+API+Setup)
 [HBase via cURL](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase+via+cURL)
 ```
@@ -242,7 +245,7 @@ curl -i -k -u username:password -H "Accept: application/json"  -X GET  "https://
 
 ## [Knox UI Service Details](https://knox.apache.org/books/knox-2-0-0/user-guide.html#UI+Service+Details)
 - Name Node UI
-    - https://localhost:8443/gateway/default/hdfs
+    - [https://localhost:8443](https://{gateway-host}:{gateway-port})/gateway/default/hdfs
 - Job History UI
     - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/jobhistory
 - Oozie UI
