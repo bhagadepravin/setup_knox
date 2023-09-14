@@ -1,0 +1,66 @@
+  <configuration  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <property>
+      <name>gateway.dispatch.whitelist</name>
+      <value>DEFAULT</value>
+    </property>
+
+    <property>
+      <name>gateway.dispatch.whitelist.services</name>
+      <value>DATANODE,HBASEUI,HDFSUI,JOBHISTORYUI,NODEUI,YARNUI,knoxauth</value>
+    </property>
+
+    <property>
+      <name>gateway.gateway.conf.dir</name>
+      <value>deployments</value>
+    </property>
+
+    <property>
+      <name>gateway.hadoop.kerberos.secured</name>
+      <value>true</value>
+    </property>
+
+    <property>
+      <name>gateway.knox.admin.groups</name>
+      <value>admin</value>
+    </property>
+
+    <property>
+      <name>gateway.knox.admin.users</name>
+      <value>admin</value>
+    </property>
+
+    <property>
+      <name>gateway.path</name>
+      <value>gateway</value>
+    </property>
+
+    <property>
+      <name>gateway.port</name>
+      <value>8443</value>
+    </property>
+
+    <property>
+      <name>gateway.read.only.override.topologies</name>
+      <value>admin,knoxsso,default</value>
+    </property>
+
+    <property>
+      <name>gateway.websocket.feature.enabled</name>
+      <value>false</value>
+    </property>
+
+    <property>
+      <name>java.security.auth.login.config</name>
+      <value>/etc/knox/conf/krb5JAASLogin.conf</value>
+    </property>
+
+    <property>
+      <name>java.security.krb5.conf</name>
+      <value>/etc/krb5.conf</value>
+    </property>
+
+    <property>
+      <name>sun.security.krb5.debug</name>
+      <value>false</value>
+    </property>
