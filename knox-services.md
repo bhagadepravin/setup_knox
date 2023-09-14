@@ -74,14 +74,14 @@ beeline -u "jdbc:hive2://KnoxserverInternalHostName:8443/;ssl=true;sslTrustStore
 </param>
 ```
 
-## YARN
-[Yarn](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Yarn)
+## [YARN](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Yarn)
+
 [Yarn Examples via cURL](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Yarn+Examples+via+cURL)
 
 curl -ikv -u guest:guest-password -X GET 'https://localhost:8443/gateway/default/resourcemanager/v1/cluster'
 
-## KAFKA
-[Kafka](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Kafka)
+## [KAFKA](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Kafka)
+
 ```
 <service>
     <role>KAFKA</role>
@@ -100,8 +100,7 @@ curl -ikv -u guest:guest-password -X POST 'https://localhost:8443/gateway/defaul
 
 ````
 
-## SOLR
-[Solr](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Solr)
+## [SOLR](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Solr)
 
 ```
 <service>
@@ -126,11 +125,11 @@ curl -ikv -u guest:guest-password -X GET 'https://localhost:8443/gateway/default
 curl -ikv -u guest:guest-password -X POST 'https://localhost:8443/gateway/default/solr/admin/collections?action=CLUSTERSTATUS' 
 ```
 
-## OOZIE
-https://knox.apache.org/books/knox-2-0-0/user-guide.html#Oozie+Example+via+cURL
+## [OOZIE](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Oozie+Example+via+cURL)
 
-## HBASE
-[Hbase:](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase)
+
+## [HBASE](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase)
+
 [HBase REST API Setup](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase+REST+API+Setup)
 [HBase via cURL](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HBase+via+cURL)
 ```
