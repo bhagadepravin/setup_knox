@@ -242,5 +242,30 @@ or
 curl -i -k -u username:password -H "Accept: application/json"  -X GET  "https://{gateway-hostname}:{gateway-port}/gateway/{topology-name}/elasticsearch/"
 ```
 
+## [Knox UI Service Details](https://knox.apache.org/books/knox-2-0-0/user-guide.html#UI+Service+Details)
+- Name Node UI
+    - https://localhost:8443/gateway/default/hdfs
+- Job History UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/jobhistory
+- Oozie UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/oozie/
+- HBase UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/hbase/webui/
+- Yarn UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/yarn
+- Spark UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/sparkhistory
+- Ambari UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/ambari/
+- Ranger Admin Console
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/ranger/
+- Atlas UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{topology}/atlas/index.html
+- Zeppelin UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{topology}/zeppelin/
+- Nifi UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{topology}/nifi-app/nifi/
+- Hue UI
+    - https://{gateway-host}:{gateway-port}/{gateway-path}/{topology}/hue/
 
 
