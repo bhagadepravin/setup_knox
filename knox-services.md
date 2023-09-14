@@ -245,7 +245,7 @@ curl -i -k -u username:password -H "Accept: application/json"  -X GET  "https://
 
 ## [Knox UI Service Details](https://knox.apache.org/books/knox-2-0-0/user-guide.html#UI+Service+Details)
 - Name Node UI
-    - [https://localhost:8443](https://{gateway-host}:{gateway-port})/gateway/default/hdfs
+    - https://{gateway-host}:{gateway-port}/gateway/default/hdfs
 - Job History UI
     - https://{gateway-host}:{gateway-port}/{gateway-path}/{cluster-name}/jobhistory
 - Oozie UI
