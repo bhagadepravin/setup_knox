@@ -2,7 +2,7 @@
 
 ##### How to connect
 
-- WebHDFS
+- [WebHDFS](https://github.com/bhagadepravin/setup_knox/edit/main/knox-services.md)
 - Oozie
 - HBase
 - Hive
@@ -24,15 +24,14 @@ Make sure WebHDFS must be enabled in the hdfs-site.xml configuration file and ex
 </property>
 ```
 
-curl -ik -u Username:Password -X GET "https://{gateway-host}:{gateway-port}/gateway/default/webhdfs/v1/?op=LISTSTATUS"
+`curl -ik -u Username:Password -X GET "https://{gateway-host}:{gateway-port}/gateway/default/webhdfs/v1/?op=LISTSTATUS"`
 
-## HIVE
-[Hive](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Hive)
+## [HIVE](https://knox.apache.org/books/knox-2-0-0/user-guide.html#Hive)
+
 Connect to hive using Knox.
 ```
 jdbc:hive2://{gateway-host}:{gateway-port}/;ssl=true;sslTrustStore={gateway-trust-store-path};trustStorePassword={gateway-trust-store-password};transportMode=http;httpPath={gateway-path}/{cluster-name}/hive
 ```
-
 
 [HiveServer2 HA](https://knox.apache.org/books/knox-2-0-0/user-guide.html#HiveServer2+HA)
 ```
