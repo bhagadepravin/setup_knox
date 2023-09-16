@@ -7,3 +7,4 @@
   - [Sample krb5JAASLogin.conf](https://github.com/bhagadepravin/setup_knox/blob/main/krb5JAASLogin.conf)
 - [Knox Service](https://github.com/bhagadepravin/setup_knox/blob/main/knox-services.md)
 - [Knox HA Service Support](https://github.com/bhagadepravin/setup_knox/blob/main/Knox-HA-Service.md)
+- [Service Test API](https://github.com/bhagadepravin/setup_knox/blob/main/service-test.md)
