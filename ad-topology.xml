@@ -74,8 +74,7 @@
 				<enabled>true</enabled>
 				<param>
 					<name>YARNUI</name>
-					<value>maxFailoverAttempts=3;failoverSleep=1000;maxRetryAttempts=300;retrySleep=1000;enabled=true
-                </value>
+					<value>maxFailoverAttempts=3;failoverSleep=1000;maxRetryAttempts=300;retrySleep=1000;enabled=true</value>
 				</param>
 				<param>
 					<name>OOZIE</name>
