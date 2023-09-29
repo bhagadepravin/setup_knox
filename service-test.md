@@ -16,6 +16,6 @@ java_home_knox=$(ps aux | grep "[j]ava.*gateway.jar" | awk '{print $11}' | xargs
 echo -n | openssl s_client -connect $HOSTNAME:8443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /tmp/knoxcert.crt
 keytool -import -noprompt -trustcacerts -alias "knox-cert" -file "/tmp/knoxcert.crt" -keystore "$java_home_knox/jre/lib/security/cacerts" -storepass "changeit"
 
-"curl -i -k "https://$KNOX_GATEWAY_HOST:8443/gateway/default/service-test?username=admin&password=admin-password"
+curl -i -k "https://$HOSTNAME:8443/gateway/default/service-test?username=admin&password=admin-password"
 ```
 
