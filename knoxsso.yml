@@ -62,7 +62,6 @@
 				<name>urls./**</name>
 				<value>authcBasic</value>
 			</param>
-			<!--  AD groups of users to allow -->
 			<param>
 				<name>main.ldapRealm.searchBase</name>
 				<value>$AD_BASE</value>
